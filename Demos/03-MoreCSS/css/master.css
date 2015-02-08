@@ -1,0 +1,56 @@
+/*
+.box {
+	background: #eee url("../images/bg.gif");
+	background-repeat: repeat-x;
+	background-position: center;
+	height: 800px;
+}
+*/
+
+/*
+.logo {
+	background: url(../images/logo.png) no-repeat center;
+	display: block;
+	height: 90px;
+	width: 280px;
+	text-indent: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+*/
+
+.square {
+	height: 200px;
+	width: 200px;
+	background: gray;
+	border: 1px solid blue;
+}
+
+
+.bar {
+	height: 200px;
+	background: darkgray;
+	/* clear: both; */
+}
+
+
+.clearfix {
+	border: 10px solid green;
+}
+
+
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+	border: 1px solid green;
+}
+
+.left {
+	float: left;
+}
+
+
+.right {
+	float: right;
+}
