@@ -183,9 +183,23 @@ hr {
 	vertical-align: middle;
 }
 
+.footerLeft:before {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+}
+
 .footerCenter {
 	display: inline-block;
 	vertical-align: middle;
+}
+
+.footerCenter:before {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
 }
 
 .footerRight {
@@ -200,6 +214,12 @@ hr {
 	vertical-align: middle;
 }
 
+.footerRight:before {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+}
 
 
 
