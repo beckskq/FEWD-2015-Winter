@@ -7,26 +7,44 @@ $(document).ready(function() {
 
 
 		if (value == 0) {
-			$(".display").val(action);
+			updateDisplay(action)
 		} else {                                      //read else as otherwise
-			$(".display").val( +value + +action );
+			updateDisplay( value + action );
 		}
 
-		// updateDisplay(value);   
+	});
+
+
+	$(".clear").click(function(e){
+		updateDisplay(0);
+	});
+
+
+	$(".equals").click(function(e){
+		var value   = $(".display").val();
+		
+		try {
+			value       = eval(value)
+		} catch (e){
+			alert("The price is wrong, bitch")
+		}
+
+		updateDisplay(value)
 
 	});
 
 });
+
+	function updateDisplay(value) {
+		$(".display").val(value)
+	}
+
 
 // 1. capture when/react to button press
 
 // 2. Evaluate the user input
 
 // 3. Update the display (migth update a lot depending on what we want to display)
-
-	function updateDisplay(value) {
-		
-	}
 
 // 4. Clear current input
 
