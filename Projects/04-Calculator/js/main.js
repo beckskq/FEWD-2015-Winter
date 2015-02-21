@@ -14,13 +14,13 @@ $(document).ready(function() {
 			action  = $button.data("action"),  //look for data-action = "..." and applies the action in "..."
 			value   = $display.value();  //might be .val but that doesn't highlight blue
 
-		if (value === 0) {
+		if (value == 0) {
 			value = action;
 		} else {
 			value += action;
 		}
 
-		updateDisplay(value);   //updateDisplay didn't highlight
+		updateDisplay(value);   // ** updateDisplay didn't highlight **
 
 }
 
@@ -35,6 +35,10 @@ $(document).ready(function() {
 	}
 
 // 4. Clear current input
+
+
+//hook into = button that evals eq and updates result. hook into clear event. be defensive so that there's always a number coming out.
+
 
 
 // Watch for where actions interconnect and reuse 
