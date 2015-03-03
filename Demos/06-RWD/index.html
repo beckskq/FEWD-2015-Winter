@@ -3,22 +3,70 @@
 	<head>
 		<title>RWD Demo</title>
 
-		<style>
-			[class*="fs-cell"] {
-				background: rgba(26, 104, 173, 0.25);
-				overflow: hidden;
-				color: #fff;
-				font-size: 12px;
-				letter-spacing: 0.15em;
-				padding: 20px;
-				text-align: center;
-				text-transform: uppercase;
-			}
-		</style>
-	</head>
-	<body>
+		<link href="css/master.css" rel="stylesheet" type="text/css">
 
-		<div class="fs-cell"></div>
+		
+
+		<link href="components/normalize-css/normalize.css" rel="stylesheet">
+		<link href="components/formstone/dist/css/grid.css" rel="stylesheet">
+
+
+<!--- Look in fewd student repo for ben's code -->
+
+
+	</head>
+	<body class="fs-grid">
+
+		<div class="fs-row">
+			<div class="fs-cell fs-lg-half">Lorem ipsum dolor set amet. </div>
+			<div class="fs-cell fs-lg-half">Lorem ipsum dolor set amet. </div>
+
+		</div>
+
+		<br>
+
+		<div class="fs-row">
+			<div class="fs-cell fs-all-third">Lorem ipsum dolor set amet. </div>
+			<div class="fs-cell fs-all-third">Lorem ipsum dolor set amet. </div>
+			<div class="fs-cell fs-all-third">Lorem ipsum dolor set amet. </div>
+
+		</div>
+
+		<br>
+		
+		<div class="fs-row">
+			<div class="fs-cell fs-lg-4">sidebar </div>
+			<div class="fs-cell fs-lg-8">content</div>
+
+		</div>
+
+		<br>
+		
+		<div class="fs-row">
+			<div class="fs-cell-right fs-lg-4">Sidebar </div>
+			<div class="fs-cell fs-lg-8">content </div>
+
+		</div>
+
+		<br>
+		
+		<div class="fs-row">
+			<div class="fs-cell fs-lg-2">sidebar </div>
+			<div class="fs-cell fs-lg-6 fs-lg-push-2">Content</div>
+
+		</div>
+
+		<br>
+		
+		<div class="fs-row">
+			<div class="fs-cell fs-lg-8">
+				<div class="fs-row">
+						<div class="fs-cell fs-all-half">1</div>
+						<div class="fs-cell fs-all-half">2</div>
+
+			</div>
+		</div>
+
 
 	</body>
 </html>

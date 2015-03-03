@@ -1,18 +1,18 @@
-var $display;
+var $display; 
 
 $(document).ready(function() {
 
 	$display = $(".display");
 
-	$(".digit, .operator").on("click, onButtonPress");
+	$(".digit, .operator").on("click", onButtonPress);
 
 });
 
 // 1. capture when/react to button press
 	function onButtonPress(e) {
-		var $button = $(e.currentTarget),
-			action  = $button.data("action"),  //look for data-action = "..." and applies the action in "..."
-			value   = $display.value();  //might be .val but that doesn't highlight blue
+		var $button  = $(e.currentTarget),
+			 action  = $button.data("action"),  //look for data-action = "..." and applies the action in "..."
+			 value   = $display.value();  //might be .val but that doesn't highlight blue
 
 		if (value == 0) {
 			value = action;
