@@ -3,9 +3,6 @@ img {
 	padding: 5px;
 }
 
-h1 {
-
-}
 
 /* HEADER */
 
@@ -43,10 +40,20 @@ h1 {
 	width: 100%;
 }
 
-.introContent {
+
+.intro_header {
 	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 40px;
+	font-weight: light;
+	font-size: 70px;
 	color: #ffffff;
+
+}
+
+.intro_content {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 20px;
+	color: #ffffff;
+}
 }
 
 
