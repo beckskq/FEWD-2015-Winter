@@ -5,15 +5,24 @@
 
 		<link href="css/master.css" rel="stylesheet" type="text/css">
 		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css'>
-
 		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-
 		<link href="components/normalize-css/normalize.css" rel="stylesheet">
-
 		<link href="components/formstone/dist/css/grid.css" rel="stylesheet">
+		<!-- check link below if correct and redo js doc -->
+<link href="components/formstone/dist/js/lightbox.css" rel="stylesheet">
 
-		<script src="components/modernizr/modernizr.js">
-		</script>
+
+		<!-- [if IE 8]>
+			<link href="components/formstone/dist/css/grid.ie.css" rel="stylesheet">
+			<link href="css/site-ie.css" rel="stylesheet">
+		<!-- [endif]-->
+
+		<script src="components/modernizr/modernizr.js"></script>
+		<script src="components/jquery/dist/jquery.js"></script>
+		<script src="components/formstone/dist/js/core.js"></script>
+		<script src="components/formstone/dist/js/transition.js"></script>
+		<script src="components/formstone/dist/js/lightbox.js"></script>
+
 
 	</head>
 	<body class="fs-grid">
@@ -60,42 +69,42 @@
 					</div>
 				</div>
 
-					<a href="x" class="gallery-image fs-cell fs-sm-half fs-md-1 fs-lg-2">
+					<a href="x" class="gallery-image fs-cell fs-sm-half fs-md-1 fs-lg-2 js-lightbox data-lightbox-gallery">
 						<img src="images/photos/thumb_01.jpg" alt="fpo">
 					</a>
 
-					<a href="x" class="gallery-image fs-cell fs-sm-half fs-md-1 fs-lg-2">
+					<a href="x" class="gallery-image fs-cell fs-sm-half fs-md-1 fs-lg-2 js-lightbox data-lightbox-gallery">
 						<img src="images/photos/thumb_02.jpg" alt="fpo">
 					</a>
 
-					<a href="x" class="gallery-image fs-cell fs-sm-half fs-md-1 fs-lg-2">
+					<a href="x" class="gallery-image fs-cell fs-sm-half fs-md-1 fs-lg-2 js-lightbox data-lightbox-gallery">
 						<img src="images/photos/thumb_03.jpg" alt="fpo">
 					</a>
 
-					<a href="x" class="gallery-image fs-cell fs-sm-half fs-md-1 fs-lg-2">
+					<a href="x" class="gallery-image fs-cell fs-sm-half fs-md-1 fs-lg-2 js-lightbox data-lightbox-gallery">
 						<img src="images/photos/thumb_04.jpg" alt="fpo">
 					</a>
 
-					<a href="x" class="gallery-image fs-cell fs-sm-half fs-md-1 fs-lg-2">
+					<a href="x" class="gallery-image fs-cell fs-sm-half fs-md-1 fs-lg-2 js-lightbox data-lightbox-gallery">
 						<img src="images/photos/thumb_05.jpg" alt="fpo">
 					</a>
 
-					<a href="x" class="gallery-image fs-cell fs-sm-half fs-md-1 fs-lg-2">
+					<a href="x" class="gallery-image fs-cell fs-sm-half fs-md-1 fs-lg-2 js-lightbox data-lightbox-gallery">
 						<img src="images/photos/thumb_06.jpg" alt="fpo">
 					</a>
 
-					<a href="x" class="gallery-image fs-cell fs-sm-half fs-md-1 fs-lg-2">
+					<a href="x" class="gallery-image fs-cell fs-sm-half fs-md-1 fs-lg-2 js-lightbox data-lightbox-gallery">
 						<img src="images/photos/thumb_07.jpg" alt="fpo">
 					</a>
 
-					<a href="x" class="gallery-image fs-cell fs-sm-half fs-md-1 fs-lg-2">
+					<a href="x" class="gallery-image fs-cell fs-sm-half fs-md-1 fs-lg-2 js-lightbox data-lightbox-gallery">
 						<img src="images/photos/thumb_08.jpg" alt="fpo">
 					</a>
 
 			</div>
 		</div>
 
-		<div class="bar download fs-row">
+		<div class="download fs-row">
 
 			<div class="download-heading">Download Now
 			</div>
@@ -103,24 +112,57 @@
 			<div class="download-content">Nullam id dolor id nibh ultricies vehicula deposit quid pro quo hic escorol.
 			</div>
 
-			<div class="download-button fs-row fs-sm-3 fs-md-third fs-lg-3">
-				<div class="download-apple fs-cell "> 
-				</div>
+
+			<div class="download-button fs-cell fs-sm-3 fs-md-third fs-lg-4">
+					<div class="download-button download-apple "> 
+					</div>
 			</div>
-
-				<div class="download download-button download-google fs-cell fs-sm-3 fs-md-third fs-lg-3"> 
-				</div>
 			
-				<div class="download download-button download-amazon fs-cell fs-sm-3 fs-md-third fs-lg-3"> 
-				</div>
+			<div class="download-button fs-cell fs-sm-3 fs-md-third fs-lg-4">
+					<div class="download-button download-google"> 
+					</div>
+			</div>
+				
+
+			<div class="download-button fs-cell fs-sm-3 fs-md-third fs-lg-4">
+					<div class="download-button download-amazon"> 
+					</div>
+			</div>		
+		</div>	
+		
 
 
-		</div>
+		<div class="bar footer fs-row">
 
+			<hr>
 
-		<div class="footer">
-		Support   Privacy &#38; Terms   © 2014 PicticiousPro
+			<div class="social-buttons fs-cell">
+				
+					<a href="http://www.facebook.com" class="facebook" alt="facebook">	
+					</a>
+
+					<a href="http://www.twitter.com" class="twitter" alt="twitter">	
+					</a>
+
+					<a href="http://www.google.com" class="google-plus" alt="google plus">	
+					</a>
+
+			</div>	
+
+			<div class="footer-content fs-cell">
+
+				<a href="#" class="footer-links">Support</a>
+
+				<a href="#" class="footer-links">Privacy &#38; Terms</a>
+
+				<div class="footer-copyright">&copy; 2015 PicticiousPro</div>
+
+			</div>
 		</div>
 
 	</body>
 </html>
+
+
+
+
