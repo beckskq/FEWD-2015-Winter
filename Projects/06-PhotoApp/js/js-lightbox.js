@@ -1,2 +1,6 @@
-Doc ready
-js for light box
+
+new WOW().init();
+
+$(document).ready(function) {
+
+}
